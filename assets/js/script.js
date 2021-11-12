@@ -17,3 +17,5 @@ window.onload = function () {
         display = document.querySelector('#time');
     startTimer(sixtySeconds, display);
 }
+
+/* Initial Modal */
