@@ -5,9 +5,14 @@
     width: 80%;
     height: 80%;
     justify-content: center;
+    visibility: hidden;
 }
 
 /* Modal COntent */
 .theQuiz-content {
-    margin: auto;    
+    margin: auto;  
+    width: 80%;
+    height: 80%;
+    color: black;
+    background-color: white;
 }
