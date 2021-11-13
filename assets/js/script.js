@@ -23,6 +23,8 @@ var theQuiz=document.getElementById("quizModal");
 
 var btn=document.getElementById("start");
 
-btn.onclick=function()
+btn.onclick=function() {
+    modal.style.display="block";
+}
 
 
