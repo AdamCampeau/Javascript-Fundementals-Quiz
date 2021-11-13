@@ -18,4 +18,11 @@ window.onload = function () {
     startTimer(sixtySeconds, display);
 }
 
-/* Initial Modal */
+/* Modal */
+var theQuiz=document.getElementById("quizModal");
+
+var btn=document.getElementById("start");
+
+btn.onclick=function()
+
+
