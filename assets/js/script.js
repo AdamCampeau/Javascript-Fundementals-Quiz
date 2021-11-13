@@ -1,5 +1,7 @@
 var timer = 60;
 // Countdown Timer Function 
+
+// Quiz Questions
 var questions = [
     {question: "What is JavaScript?",
     options: ["Java language for web development",
@@ -27,71 +29,69 @@ var questions = [
         "Documented Object Markup",
         "Document Object Model",	
         "Docomented Ordered Mass"],
-    answer= "Document Object Model"},
+    answer: "Document Object Model"},
 
-    {question:"What does the DOM do?"
+    {question:"What does the DOM do?",
     options: ["Connects web pages to programming/scripting languages",
         "Allows a programming interface to external Document customization",  
-        "Represents Document as a logical tree"],
-        "All of the above"},
+        "Represents Document as a logical tree",
+        "All of the above"],
+    answer: "All of the above"},
     
-    {q}
+    {question:"A function is",
+    options: ["Run when an event occurs",	
+        "Undefined",
+        "A single use event",
+        "Not available in JavaScript"],
+    answer: "Run when an event occurs"},
 
-A function is
+    {question:"An operator",
+    options:["Joins strings and runs tests",
+        "Executes math equations",
+        "All of the above", 	
+        "None of the above"],
+    answer: "All of the above"},
 
-Run when an event occurs	x
-Undefined
-A single use event
-Not available in JavaScript
+    {question:"Conditionals", 
+    options:["Are interchanging logic-based code blocks",
+        "Are True/False logic-based code blocks",		
+        "Are Numeric logic-based code blocks",
+        "Are Not logic-based code blocks"],
+    answer:"Are True/False logic-based code blocks"},
 
-An operator
+    {question:"Browser interaction is known as",
+    options: ["An occurance",
+        "An interaction",
+        "A rebase",
+        "An event"], 	
+    answer:"An event"},
+        
+    {question:"Event listeners",
+    options: ["Listen for browser events",
+        "Alerts user on event",
+        "Are not compatible with JavaScript",
+        "Are only usable once"],
+    answer:"Listen for browser events"},
 
-Joins strings and runs tests
-Executes math equations 
-All of the above 	x
-None of the above
+    {question:"addEventListener()",
+    options: ["Adds event listener to an event", 	
+        "Adds event listener to an element",
+        "Adds event listnere to an interacation",
+        "Adds event listener to an interface"],
+    answer: "Adds event listenet to an event"},
 
-Conditionals 
-
-Are interchanging logic-based code blocks
-Are True/False logic-based code blocks		x
-Are Numeric logic-based code blocks
-Are Not logic-based code blocks
-
-Browser interaction is known as
-
-an occurance
-a rebase
-an event 	x
-an interaction
-
-
-Event listeners 
-
-Listen for browser events 	x
-Alerts user on event
-Are not compatible with JavaScript
-Are only usable once
-
-addEventListener()
-
-Adds event listener to an event 	x
-Adds event listener to an element
-Adds event listnere to an interacation
-Adds event listener to an interface
-
-JavaScript files are only available externally
-
-True
-False 	*
+    {question:"JavaScript files are only available externally",
+    options: ["True",
+            "False"],
+    answer: "False"}, 	
 
 
-Choose the correct JavaScript link
-
-<script src="../assets/js/script.js"></script> 		x
-<script a href="../assets/js/script.js">/script>
-<src script="../assets/js/script.js"></script>
-<script>./script.js</script>
+    {question:"Choose the correct JavaScript link",
+    options:["<script src=\"../assets/js/script.js\"></script>", 		
+        "<script a href=\"../assets/js/script.js\">/script>",
+        "<src script=\"../assets/js/script.js\"></script>",
+        "<script src=\">.script.is</script>\""],
+    answer:"<script src=\"../assets/js/script.js\"></script>"},
 
 console.log()
 
