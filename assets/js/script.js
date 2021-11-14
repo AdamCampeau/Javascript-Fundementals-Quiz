@@ -38,7 +38,7 @@ document.getElementByFunction("start").addEventListener("click", startTimer);
 // let start = prompt(questions);
 
 for (questions;
-    if (questions, answer == 1) {     
+    if {     
             text = ("Correct!");
             score = score+1.5;
         }  
@@ -55,10 +55,10 @@ var questions = [
 //1
     {question: "What is JavaScript?",
     options: [
-           "Java language for web development",
-            0 ="Markup Language",
-            0 = "Scripting/Programing language",
-             "Scripting Language"],
+            <button>Java language for web development</button>,
+            <button>Markup Language</button>,
+            <button>Scripting/Programing language</button>,
+            <button>Scripting Language</button>,
     answer: "Java language for web development"},
 
 //2
