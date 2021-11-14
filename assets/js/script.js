@@ -17,14 +17,23 @@ var timer = 60;
 
 // Statement 3 is executed (every time) after the code block has been executed.
 
-for (question;
-    if (answer==options)
 
+var score = document.getElementById.("data-answer");
+    increment = document.getElementById('y'),
+    decrement = document.getElementById('n')
+   
+)
+
+for each (question;
+    if (answer==options){
+        text = "Correct!";
+        increment =  
+
+    else { (answer)
+        text = "Wrong!";
+        
+    }
     ) {
-
-}
-
-}
 
 // Quiz Questions
 var questions = [
