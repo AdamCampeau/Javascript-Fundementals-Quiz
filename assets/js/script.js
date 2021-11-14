@@ -17,13 +17,18 @@ var timer = 60;
 
 // Statement 3 is executed (every time) after the code block has been executed.
 
-var totalScore = Document.getElementbyId('totalScore');
-totalScore.innerHTML=score;
+// var totalScore = Document.getElementbyId('totalScore');
+// totalScore.innerHTML=score;
 
-var highScore = localStorage.getItem('highScore')
+// Store
+localStorage.highScore = totalScore;
+// Retrieve
+document.getElementById(totalScore).innerHTML = localStorage.highScore;
+
+//var highScore = localStorage.getItem('highScore')
 
 // Increase score counter
-var score=0
+// var score=0
 // var score = document.getElementById.();
 
 document.getElementByFunction("start").addEventListener("click",displayQuestion(index));
@@ -33,7 +38,7 @@ document.getElementByFunction("start").addEventListener("click", startTimer);
 // let start = prompt(questions);
 
 for (questions;
-    if (question = answer) {     
+    if (questions, answer == 1) {     
             text = ("Correct!");
             score = score+1.5;
         }  
@@ -50,10 +55,10 @@ var questions = [
 //1
     {question: "What is JavaScript?",
     options: [
-            "Java language for web development",
-            "Markup Language",
-            "Scripting/Programing language",
-            "Scripting Language"],
+           "Java language for web development",
+            0 ="Markup Language",
+            0 = "Scripting/Programing language",
+             "Scripting Language"],
     answer: "Java language for web development"},
 
 //2
