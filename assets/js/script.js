@@ -26,11 +26,10 @@ var score=0
     
   
 
-let question = prompt(options);
-for (question;
-    if (options = answer
-        ) 
-        {
+let questions = prompt(questions);
+for (questions;
+    
+    if (question = answer) {     {
             text = ("Correct!");
             score = score+1.5;
         }  
