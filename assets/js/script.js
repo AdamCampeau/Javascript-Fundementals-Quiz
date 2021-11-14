@@ -1,16 +1,39 @@
 var timer = 60;
 // Countdown Timer Function 
 
+
+//FOR loop to loop over options array
+//create button for each option
+//assign data attribute to each buttons
+//btn.addAttribute("data-answer", questions[index].options[i])
+
+//for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+//}
+
+// Statement 1 is executed (one time) before the execution of the code block.
+
+// Statement 2 defines the condition for executing the code block.
+
+// Statement 3 is executed (every time) after the code block has been executed.
+
+for (question;
+    if (answer==options)
+
+    ) {
+
+}
+
+}
+
 // Quiz Questions
-
-
 var questions = [
 //1
     {question: "What is JavaScript?",
-    options: ["Java language for web development",
-            "Markup Language",
-            "Scripting/Programing language",
-            "Scripting Language"],
+    options: a: "Java language for web development",
+            b: "Markup Language",
+            c: "Scripting/Programing language",
+            d: "Scripting Language"],
     answer: "Java language for web development"},
 
 //2
