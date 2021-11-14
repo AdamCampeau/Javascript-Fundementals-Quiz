@@ -17,11 +17,14 @@ var timer = 60;
 
 // Statement 3 is executed (every time) after the code block has been executed.
 
+var totalScore = Document.getElementbyId('totalScore');
+totalScore.innerHTML=score;
+
 // Increase score counter
 var score=0
 var score = document.getElementById.();
     
-   
+  
 )
 
 for each (question;
