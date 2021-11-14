@@ -17,22 +17,25 @@ var timer = 60;
 
 // Statement 3 is executed (every time) after the code block has been executed.
 
-
-var score = document.getElementById.("data-answer");
-    increment = document.getElementById('y'),
-    decrement = document.getElementById('n')
+// Increase score counter
+var score=0
+var score = document.getElementById.();
+    
    
 )
 
 for each (question;
-    if (answer==options){
-        text = "Correct!";
-        increment =  
+    if (answer==options)
+        {
+            text = "Correct!";
+            score = score+1.5;
+        }  
 
-    else { (answer)
-        text = "Wrong!";
-        
-    }
+    else 
+        {
+            text = "Wrong!";
+            score = score - 0.5
+        }
     ) {
 
 // Quiz Questions
