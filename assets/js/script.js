@@ -26,14 +26,14 @@ var highScore = localStorage.getItem('highScore')
 var score=0
 // var score = document.getElementById.();
 
-document.getElementById("start").addEventListener("click", questions);
+document.getElementByFunction("start").addEventListener("click",displayQuestion(index));
+document.getElementByFunction("start").addEventListener("click", startTimer);
   
 
 // let start = prompt(questions);
 
-    for (questions;
-    
-        if (question = answer) {     {
+for (questions;
+    if (question = answer) {     
             text = ("Correct!");
             score = score+1.5;
         }  
@@ -41,7 +41,7 @@ document.getElementById("start").addEventListener("click", questions);
         else 
         {
             text = ("Wrong!");
-            score = score - 0.5
+            score = score - 0.5;
         }
     
 
@@ -229,14 +229,14 @@ function displayQuestion(index){
 
 
 /* Modal */
-var theQuiz=document.getElementById("quizModal");
+//var theQuiz=document.getElementById("quizModal");
 
-var btn=document.getElementById("start");
+//var btn=document.getElementById("start");
 
-btn.onclick=function() {
+//btn.onclick=function() {
    // modal.style.display="block";
-   startTimer();
-   displayQuestion(index);
-}
+   //startTimer();
+   //displayQuestion(index);
+//}
 
 
