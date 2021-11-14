@@ -22,33 +22,35 @@ totalScore.innerHTML=score;
 
 // Increase score counter
 var score=0
-var score = document.getElementById.();
+// var score = document.getElementById.();
     
   
-)
 
-for each (question;
-    if (answer==options)
+let question = prompt(options);
+for (question;
+    if (options = answer
+        ) 
         {
-            text = "Correct!";
+            text = ("Correct!");
             score = score+1.5;
         }  
 
     else 
         {
-            text = "Wrong!";
+            text = ("Wrong!");
             score = score - 0.5
         }
-    ) {
+    {
 
 // Quiz Questions
 var questions = [
 //1
     {question: "What is JavaScript?",
-    options: a: "Java language for web development",
-            b: "Markup Language",
-            c: "Scripting/Programing language",
-            d: "Scripting Language"],
+    options: [
+            "Java language for web development",
+            "Markup Language",
+            "Scripting/Programing language",
+            "Scripting Language"],
     answer: "Java language for web development"},
 
 //2
