@@ -1,18 +1,25 @@
-/* Modal Background */
-.theQuiz {
-    position:fixed;
-    z-index: 5;
-    width: 80%;
-    height: 80%;
-    justify-content: center;
-    visibility: hidden;
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
 }
 
-/* Modal COntent */
-.theQuiz-content {
-    margin: auto;  
-    width: 80%;
-    height: 80%;
-    color: black;
-    background-color: white;
+h2 {
+    color: mediumvioletred;
+}
+
+button {
+    background-color:blueviolet;
+    color: white;
+}
+
+#highScore {
+    float:left;
+}
+
+#time {
+    float:right;
+}
+
+#highScore {
+    float:left;
 }

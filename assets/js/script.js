@@ -20,6 +20,8 @@ var timer = 60;
 var totalScore = Document.getElementbyId('totalScore');
 totalScore.innerHTML=score;
 
+var highScore = localStorage.getItem('highScore')
+
 // Increase score counter
 var score=0
 // var score = document.getElementById.();
