@@ -9,35 +9,31 @@
 </head>
 
 <body>
-<!-- Header-->
+    <!--Header-->
     <header>
         <h2><span id="highScore">High Score</span></h2>
         <h2><span id="time">Time: 0</span></h2>
         <h2><span id="totalScore">Score:0</span></h2>
     </header>
 
-<!--Main Theme-->   
-    <main>
-        <h1>Coding Quiz Challenge</h1>
+    <!--Start Quiz-->
+    <div class="quizContainter" >
+        <h1 class="challenge">Coding Quiz Challenge</h1>
             <p>
-                Try to answeer the following code related within the time limit.
+                Try to answer the following code related within the time limit.
+            </br>
                 Keep in mind that incorrect answers will penalize your score!
             </p>
             
-            <!--Modal-->
-            <div id="quizModal" class="theQuiz">
-                <!-- Clicking button Opens Modal (Quiz) -->
-                <button id="start">Start Quiz</button>
-
-                <!--Content-->
-                <div class="theQuiz-content" id="q">
-                    <span class="insert"></span>
+        <div class="theQuiz">
+            <button id="start">Start Quiz</button>
+            <!--Content-->
+            <div class="theQuiz-content" id="q">
+                <span class="insert"></span>
                     <p></p>
-                </div>
             </div>
-
-
-    </main>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

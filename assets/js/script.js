@@ -25,23 +25,25 @@ var highScore = localStorage.getItem('highScore')
 // Increase score counter
 var score=0
 // var score = document.getElementById.();
-    
+
+document.getElementById("start").addEventListener("click", questions);
   
 
-let questions = prompt(questions);
-for (questions;
+// let start = prompt(questions);
+
+    for (questions;
     
-    if (question = answer) {     {
+        if (question = answer) {     {
             text = ("Correct!");
             score = score+1.5;
         }  
 
-    else 
+        else 
         {
             text = ("Wrong!");
             score = score - 0.5
         }
-    {
+    
 
 // Quiz Questions
 var questions = [
