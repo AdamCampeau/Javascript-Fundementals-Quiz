@@ -21,6 +21,28 @@ var timer = 60;
 // totalScore.innerHTML=score;
 
 // Store
+
+// New comments
+// Initialize  
+// var QandA = [ // length of 10 for ex.
+// //    {Question, [options]},
+//     {
+//         Question: "What is your name?",
+//         options: [
+//             { option1: "Adam", isCorrect: true},
+//             { option1: "Eve", isCorrect: false},
+//             "Kishan"
+//         ],
+//         correctAnswer: 2
+//     }
+// ] 
+
+// var currentQuestion = 0
+// Game starts: show question 1 (index  0)
+// var question = QandA[currentQuestion]
+
+// var questionEl = document.getElementById('Question-id');
+
 localStorage.highScore = totalScore;
 // Retrieve
 document.getElementById(totalScore).innerHTML = localStorage.highScore;
@@ -55,7 +77,7 @@ var questions = [
 //1
     {question: "What is JavaScript?",
     options: [
-            <button>Java language for web development</button>,
+           "Java Language for web development",
             <button>Markup Language</button>,
             <button>Scripting/Programing language</button>,
             <button>Scripting Language</button>,
