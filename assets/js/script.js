@@ -1,3 +1,5 @@
+var t;
+
 // Countdown Timer Function 
 
 
@@ -77,13 +79,24 @@ var questions = [
 ];
 
 var timer = 60;
-score = 0;
+function startTimer() {
+    console.log(timer)
+    timer = timer - 1;
+
+    if (timer === 0) {
+        alert('Out of time!');
+    }
+
+}  
+
+var score = 0;
 
 document.getElementById("start").addEventListener("click", startQuiz);
 var quizContainer = document.querySelector('.quizContainer')
 
 function startQuiz() {
     quizContainer.innerHTML = ""
+    timer;
     displayQuestionOne()
 }
 
