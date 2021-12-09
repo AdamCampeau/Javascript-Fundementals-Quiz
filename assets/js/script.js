@@ -40,20 +40,24 @@ var questions = [
     }
 ];
 
-var timer = setInterval(() => {
-    1000 * 60
 
-});
+// setInterval for timer
+var timer = setInterval(function(){
+    timer -= 1;
+    }, 6000);
+    if (timer === 0) 
+          alert('Out of time!');
 
-start.addEventListener('click', function startTimer() {
-    console.log(timer)
-    timer = timer - 1;
 
-    if (timer === 0) {
-        alert('Out of time!');
-    }
 
-}); 
+//start.addEventListener('click', function (timer) {
+//    console.log(timer)
+//    for (timer = 60; timer < 60; timer--) {
+
+//        if (timer === 0) {
+//        alert('Out of time!');
+//    }
+//}; 
 
 var score = 0;
 
@@ -176,4 +180,4 @@ function displayQuestionFour() {
 
 function endQuiz() {
     console.log('Quiz is over your final score is: ' + score)
-}
+}});
