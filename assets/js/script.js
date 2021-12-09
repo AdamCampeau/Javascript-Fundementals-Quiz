@@ -1,41 +1,3 @@
-var t;
-
-// Countdown Timer Function 
-
-
-//FOR loop to loop over options array
-//create button for each option
-//assign data attribute to each buttons
-//btn.addAttribute("data-answer", questions[index].options[i])
-
-// Statement 1 is executed (one time) before the execution of the code block.
-
-// Statement 2 defines the condition for executing the code block.
-
-// Statement 3 is executed (every time) after the code block has been executed.
-
-// var totalScore = Document.getElementbyId('totalScore');
-// totalScore.innerHTML=score;
-
-// Store
-
-// var currentQuestion = 0
-// Game starts: show question 1 (index  0)
-// var question = QandA[currentQuestion]
-
-// var questionEl = document.getElementById('Question-id');
-
-// localStorage.highScore = totalScore;
-// Retrieve
-// document.getElementById(totalScore).innerHTML = localStorage.highScore;
-
-//var highScore = localStorage.getItem('highScore')
-
-// Increase score counter
-// var score=0
-// var score = document.getElementById.();
-
-
 // Quiz Questions
 var questions = [
     //1
@@ -78,8 +40,12 @@ var questions = [
     }
 ];
 
-var timer = 60;
-function startTimer() {
+var timer = setInterval(() => {
+    1000 * 60
+
+});
+
+start.addEventListener('click', function startTimer() {
     console.log(timer)
     timer = timer - 1;
 
@@ -87,7 +53,7 @@ function startTimer() {
         alert('Out of time!');
     }
 
-}  
+}); 
 
 var score = 0;
 
@@ -211,39 +177,3 @@ function displayQuestionFour() {
 function endQuiz() {
     console.log('Quiz is over your final score is: ' + score)
 }
-// function startTimer() {
-//     //var timer = duration, seconds;
-//     //var timer = 5;
-//     setInterval(function () {
-//         // seconds = parseInt(timer = 60,10);
-//         timer = timer - 1;
-//         if (timer < 0) {
-//             // timer = duration;
-//             displayResult();
-//         } else {
-//             $("#time").text(timer);
-//         }
-//     }, 1000);
-// }
-
-
-/*window.onload = function () {
-    var sixtySeconds = 0,
-        display = document.querySelector('#time');
-    startTimer(sixtySeconds, display);
-}*/
-
-
-
-/* Modal */
-//var theQuiz=document.getElementById("quizModal");
-
-//var btn=document.getElementById("start");
-
-//btn.onclick=function() {
-   // modal.style.display="block";
-   //startTimer();
-   //displayQuestion(index);
-//}
-
-
