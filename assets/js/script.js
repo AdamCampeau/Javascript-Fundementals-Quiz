@@ -38,36 +38,31 @@ var questions = [
             "Docomented Ordered Mass"],
         answer: "Document Object Model"
     }
-];
-
-
-// setInterval for timer
-var timer = setInterval(function(){
-    timer -= 1;
-    }, 6000);
-    if (timer === 0) 
-          alert('Out of time!');
-
-
-
-//start.addEventListener('click', function (timer) {
-//    console.log(timer)
-//    for (timer = 60; timer < 60; timer--) {
-
-//        if (timer === 0) {
-//        alert('Out of time!');
-//    }
-//}; 
+]; 
 
 var score = 0;
+var timer = 60;
 
 document.getElementById("start").addEventListener("click", startQuiz);
+
 var quizContainer = document.querySelector('.quizContainer')
+var timeContainer = document.getElementById('time')
 
 function startQuiz() {
     quizContainer.innerHTML = ""
-    timer;
+    startTimer()
     displayQuestionOne()
+}
+
+function startTimer() {
+    timeContainer.textContent = timer
+    var setTime = setInterval(function() {
+        if (timer <= 1) {
+            clearInterval(setTime)
+        }
+        timer--
+        timeContainer.textContent = timer
+    }, 1000)
 }
 
 
@@ -90,7 +85,7 @@ function displayQuestionOne() {
                 score += 20
             } else {
                 console.log('incorrect');
-                time -= 10
+                timer -= 10
             }
             displayQuestionTwo()
         })
@@ -117,7 +112,7 @@ function displayQuestionTwo() {
                 score += 20
             } else {
                 console.log('incorrect');
-                time -= 10
+                timer -= 10
             }
             displayQuestionThree()
         })
@@ -144,7 +139,7 @@ function displayQuestionThree() {
                 score += 20
             } else {
                 console.log('incorrect');
-                time -= 10
+                timer -= 10
             }
             displayQuestionFour()
         })
@@ -171,7 +166,7 @@ function displayQuestionFour() {
                 score += 20
             } else {
                 console.log('incorrect');
-                time -= 10
+                timer -= 10
             }
             endQuiz()
         })
@@ -179,5 +174,30 @@ function displayQuestionFour() {
 }
 
 function endQuiz() {
-    console.log('Quiz is over your final score is: ' + score)
-}});
+    quizContainer.textContent = 'Quiz is over your final score is: ' + score
+
+    var input = document.createElement('input')
+    input.setAttribute('placeholder', 'What is you name?')
+    quizContainer.append(input)
+
+    var btn = document.createElement('button')
+    btn.textContent = 'Submit'
+    quizContainer.append(btn)
+
+    btn.addEventListener('click', function() {
+        var storage = JSON.parse(localStorage.getItem('highscore'))
+        if(storage === null) {
+            storage = []
+        }
+
+        var user = {
+            name: input.value,
+            currentScore: score
+        }
+
+        storage.push(user)
+        localStorage.setItem('highscore', JSON.stringify(storage))
+        window.location.href = 'highscore.html'
+    })
+
+};
