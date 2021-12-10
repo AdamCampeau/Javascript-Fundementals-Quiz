@@ -14,7 +14,10 @@ header {
 .quizContainer {
     align-content: center;
     align-self: center;
+    justify-content: left;
+    text-align: left;
 }
+
 
 .challenge {
     display: flex;
