@@ -1,32 +1,41 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align:center;
 }
 
 h2 {
     color: mediumvioletred;
 }
 
-#li {
+header {
     display: flex;
-    align-content: center;
-}
-.challenge {
-    padding-top: 150px ;
-    align-items: center;
+    justify-content: space-between;
 }
 
-p.challenge {
-    font-size: 14;
+.quizContainer {
+    align-content: center;
+    align-self: center;
+}
+
+.challenge {
+    display: flex;
+    justify-content: center;
+}
+
+#para {
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+
 }
 
 .theQuiz {
+    display: flex;
+    justify-content: center;
     align-content: center;
+    margin: auto;
+    margin-top: 15px;
 }
-
-.theQuiz-content {
-    align-content: center;
-}    
 
 button {
     background-color:blueviolet;
@@ -38,27 +47,22 @@ button {
     font-weight: bolder;
 }
 
+#sixty {
+    display: inline;
+    font-size: 24px;
+}
+
+#theTime {
+    display: inline-flex;
+    position: absolute;
+    right: 150px;
+}
 
 #start {
     align-content: center;
+    justify-content: center;
 }
 
 #q {
     align-content: center;
-}
-#highScore {
-    float:left;
-    padding: 25px 25px 24px;
-}
-
-#time {
-    float:right;
-    color: black;
-    padding: 25px 25px 24px;
-}
-
-#totalScore {
-    float:right;
-    color: black;
-    padding: 25px 25px 24px;
 }

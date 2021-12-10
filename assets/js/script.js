@@ -38,6 +38,7 @@ var questions = [
             "Docomented Ordered Mass"],
         answer: "Document Object Model"
     }
+    
 ]; 
 
 var score = 0;
